@@ -4,7 +4,7 @@ import re
 from phue import Bridge
 import random
 
-b = Bridge('10.0.1.3') # Enter bridge IP here.
+b = Bridge('') # Enter bridge IP here.
 
 WORDS = ["ON", "OFF", "TOGGLE", "KITCHEN", "BEDROOM"]
 
@@ -61,14 +61,6 @@ def handle(text, mic, profile):
 	else:
 		mic.say("I didn't understand that.")
 	
-	#lights = b.get_light_objects()
-
-	#for light in lights:
-	#	light.brightness = 250
-	#	light.xy = [random.random(),random.random()]
-
-	#mic.say("The lights have been changed.")
-
 def isValid(text):
 	if re.search(r'\bon\b', text, re.IGNORECASE):
 		return True
