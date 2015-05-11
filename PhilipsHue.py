@@ -11,7 +11,7 @@ WORDS = ["ON", "OFF", "OF", "TOGGLE", "KITCHEN", "BEDROOM", "DIM"]
 lights = b.get_light_objects()
 
 #Commands for Phue
-on =  {'transistiontime' : 10, 'on' : True, 'bri' : 250}
+on =  {'transitiontime' : 10, 'on' : True, 'bri' : 250}
 off = {'transitiontime' : 10, 'on' : False}
 dim = {'transitiontime' : 75, 'bri' : 75}
 
@@ -19,7 +19,7 @@ def handle(text, mic, profile):
 
 	if re.search(r'\bkitchen\b', text, re.IGNORECASE):
 
-		if re.search(r'\bon\b', text, re.IGNORECASE):
+	  if re.search(r'\bon\b', text, re.IGNORECASE):
 			mic.say("Turning on the kitchen lights.")
 			
 			b.set_group('Kitchen', on)

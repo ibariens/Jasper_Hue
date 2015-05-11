@@ -1,6 +1,6 @@
 ###Philips Hue Module
 
-A module to be used with an install of [Jasper](jasperproject.github.io) that conrols Philips Hue lights on your network.
+A module to be used with an install of [Jasper](http://jasperproject.github.io) that conrols Philips Hue lights on your network.
 
 
 ###Prerequisites
