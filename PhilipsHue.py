@@ -19,7 +19,7 @@ def handle(text, mic, profile):
 
     if re.search(r'\bkitchen\b', text, re.IGNORECASE):
 
-      if re.search(r'\bon\b', text, re.IGNORECASE):
+        if re.search(r'\bon\b', text, re.IGNORECASE):
             mic.say("Turning on the kitchen lights.")
             
             b.set_group('Kitchen', on)
