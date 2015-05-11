@@ -69,6 +69,7 @@ def handle(text, mic, profile):
 		mic.say("I didn't understand that.")
 	
 def isValid(text):
+  
 	if re.search(r'\bon\b', text, re.IGNORECASE):
 		return True
 	elif re.search(r'\boff\b', text, re.IGNORECASE):
